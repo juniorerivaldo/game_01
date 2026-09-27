@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Game (F5)",
+			"type": "shell",
+			"command": "odin",
+			"args": ["build", ".\\src", "-debug", "-out:.\\build\\debug.exe", "-extra-linker-flags:/STACK:8388608"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": { "reveal": "silent", "panel": "shared" },
+			"problemMatcher": []
+		},
+		{
+			"label": "Close Panel",
+			"command": "${command:workbench.action.closePanel}",
+			"type": "shell",
+			"presentation": { "reveal": "silent", "close": true },
+			"problemMatcher": []
+		}
+	]
+}

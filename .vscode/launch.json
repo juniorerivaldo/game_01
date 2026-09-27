@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "cppvsdbg",
+			"request": "launch",
+			"preLaunchTask": "Build Game (F5)",
+			"name": "Debug Game",
+			"program": "${workspaceFolder}\\build\\debug.exe",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"stopAtEntry": false,
+			"console": "internalConsole",
+			"postDebugTask": "Close Panel"
+		}
+	]
+}

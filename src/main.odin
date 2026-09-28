@@ -1,10 +1,10 @@
-package horta
+package game_01
 
 import rl "vendor:raylib"
 
 main :: proc() {
 
-	rl.InitWindow(1280, 720, "Horta")
+	rl.InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE)
 	rl.SetTargetFPS(60)
 
 	for !rl.WindowShouldClose() {
